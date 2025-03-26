@@ -2,17 +2,17 @@ import random
 import time
 import os
 cat_frames_inspired_high_disco = [
-    """
+    r"""
                              \  ∧＿∧
                               \( ^ω^)
-                               \    \\
-                               └─┬┬─┘\\
-                                 ||   \\
+                               \    \
+                               └─┬┬─┘\
+                                 ||   \
                                ┌┘  └┐ 
                                |    |                    
                                U    U 
     """,
-    """
+    r"""
                                 ∧＿∧  /
                                (^ω^ )/
                                /    /
@@ -22,7 +22,7 @@ cat_frames_inspired_high_disco = [
                                |    |                   
                                U    U 
     """,
-    """
+    r"""
                                 ∧＿∧     ̲
                                ( •ω•)   │ 
                            ┌───|    |───┘
@@ -32,8 +32,8 @@ cat_frames_inspired_high_disco = [
                                |    |                   
                                U    U 
     """,
-    """
-                          ̲     ∧＿∧
+    r"""
+                          ̲      ∧＿∧
                            │   (•ω• )     
                            └───|    |───┐
                                └─┬┬─┘   │̲
@@ -42,7 +42,7 @@ cat_frames_inspired_high_disco = [
                                |    |                    
                                U    U 
     """,
-    """
+    r"""
                                   ∧＿∧
                                  ( 'ω') 
                                  /    /
@@ -52,27 +52,27 @@ cat_frames_inspired_high_disco = [
                                  /    /                   
                                 U   U 
     """,
-    """
+    r"""
                                   ∧＿∧
                                  ('ω' ) 
-                                 \    \\ 
-                                 └─┬┬─┘\\
-                                   || \ \\
+                                 \    \ 
+                                 └─┬┬─┘\
+                                   || \ \
                                  ┌┘  └┐\ 
                                  \    \                    
                                   U   U 
     """,
-    """
-                                 ∧＿∧  \\
+    r"""
+                                 ∧＿∧  \
                                 (•ω• )/
-                                \    \\
+                                \    \
                             \  /└─┬┬─┘
                              \/   ||
                                 ┌┘  └┐ 
                                 |    |                   
                                 U    U 
     """,
-    """
+    r"""
                              ∧＿∧
                             (•ω• )
                           ┌─|    |─┐
@@ -82,17 +82,17 @@ cat_frames_inspired_high_disco = [
                             |    |                    
                             U    U 
     """,
-    """
+    r"""
                                / ∧＿∧  
                                \( •ω•)
-                                \    \\  /
-                                └─┬┬─┘\\/
+                                \    \  /
+                                └─┬┬─┘\/
                                   ||
                                 ┌┘  └┐ 
                                 |    |                   
                                 U    U 
     """,
-    """      
+    r"""      
                           \   ∧＿∧   /
                            \ (^ω^ ) /
                             └|    |┘ 
@@ -108,3 +108,9 @@ def dance_single_cat(num_frames):
             os.system('cls' if os.name == 'nt' else 'clear')
             print(frame)
             time.sleep(0.5)
+
+def main():
+    print(dance_single_cat(10))
+  
+if __name__ == "__main__":
+    main()
